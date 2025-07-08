@@ -1,0 +1,76 @@
+.note-card {
+  background: #1a1a1a;
+  backdrop-filter: blur(8px);
+  border: 1px solid #222;
+  color: #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 270px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.note-card h3 {
+  color: #00c2ff;
+  margin-bottom: 10px;
+}
+
+.note-card p {
+  color: #b0b0b0;
+  margin-bottom: 15px;
+}
+
+.note-footer span {
+  color: #888;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.note-footer .btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.note-footer button {
+  padding: 6px 10px;
+  background: #222;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.note-footer button:hover {
+  background-color: #00c2ff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.pinned {
+  border: 2px solid #00c2ff;
+  box-shadow: 0 0 10px #00c2ff;
+}
+
+.note-card {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

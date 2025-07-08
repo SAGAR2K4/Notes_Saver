@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #151515;
+  padding: 20px 30px;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #00c2ff;
+}
+
+.navbar input {
+  padding: 10px 15px;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  color: #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.navbar input:focus {
+  border-color: #00c2ff;
+  box-shadow: 0 0 8px #00c2ff;
+  outline: none;
+}
